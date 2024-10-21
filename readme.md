@@ -2,7 +2,7 @@
 > [Course Project](https://epfl-ada.github.io/teaching/fall2024/cs401/projects/) For [Applied Data Analysis 2024](https://epfl-ada.github.io/teaching/fall2024/cs401/), [EPFL](https://www.epfl.ch/en/)
 
 
-> Project Members (sorted by last name): Antonina Alekseeva, Ching-Chi Chou, Bich Ngoc (Rubi) Doan, Yasmine Kroknes-Gomez, [Ren Yi](http://www.renyi1006.com)
+> Project Members (sorted alphabetically by last name): Antonina Alekseeva, Ching-Chi Chou, Bich Ngoc (Rubi) Doan, Yasmine Kroknes-Gomez, [Ren Yi](http://www.renyi1006.com)
 
 
 ## Miscellaneous
