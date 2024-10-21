@@ -1,5 +1,5 @@
 # ADAcadabra2048 Project
-> Course Project For Applied Data Analysis, EPFL, 2024
+> Course Project For [Applied Data Analysis 2024](https://epfl-ada.github.io/teaching/fall2024/cs401/), EPFL
 
 
 > Project Members (sorted by last name): Antonina Alekseeva, Ching-Chi Chou, Bich Ngoc (Rubi) Doan, Yasmine Kroknes-Gomez, [Ren Yi](http://www.renyi1006.com)
