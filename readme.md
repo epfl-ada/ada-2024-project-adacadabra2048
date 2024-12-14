@@ -78,7 +78,7 @@ Note that some parts of each task were (partially) implemented in Milestone 2 to
 
 ## Timeline and Organization
 * **Step 1:** Refine and finish data preprocessing pipeline for classifying STEM Content *(Tonya & Yasmine)*
-* **Step 2:** Implement task 1-3, splitting among team members. Choose the visualization and insights that fit the most with our overaching research goals; having meetings to confirm, give feedback and agree on chosen implementations. *(Rubi, Chingchi, Yasmine, Ren Yi)*
+* **Step 2:** Implement task 1-3, splitting among team members. Choose the visualization and insights that fit the most with our overaching research goals; having meetings to confirm, give feedback and agree on chosen implementations. *(Rubi, Chingchi, Yasmine)*
 * **Step 3:** Combine results and check for coherence and consistency with research questions. Construct the data story accordingly. *(Everyone)*
 * **Step 4:** Develop data website and prepare the final report. *(TBD)*
 
