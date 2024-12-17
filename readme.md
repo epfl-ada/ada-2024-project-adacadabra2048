@@ -111,12 +111,13 @@ The directory structure of new project looks like this:
 ## Data Access
 The necessary files are hosted in a shared Google Drive folder, accessible at the following link:
 
-[Google Drive: ADA-edu-data-processing](https://drive.google.com/drive/folders/17GTrGzVLX6rv7BiiCdOtJ75sq7MKwkrG)
+[Google Drive: ADA dataset](https://drive.google.com/drive/folders/1yV7g05QrUFoErd6uBBaWjHgLU_RXLuBU?usp=sharing)
 
-Within the `edu-data.zip` archive, the following key files are included:
+- `final_keywords.txt` - contains the list of keywords used for classifying STEM content
+- Within the `channels` folder:
+  - `education_channel_with_country.csv` - contains all channels within education category, added a "country" column
+  - `other_channel_with_country.csv` - contains all channels within other (not education) category, added a "country" column
+- Within the `videos` folder:
+  - `videos_edu_with_country_nonan.csv` - contains all videos with education category, added a "country" column (no NaN)
+  - `videos_stem.csv` - contains all videos with education category _and_ as classified as STEM, added a "country" column (no NaN)
 
-- `education_data._raw_yt_metadata.jsonl.csv` - contains all videos with education category.
-- `education_data._raw_yt_metadata.jsonl_no_description.csv` - contains all videos with education category, without description
-- `education_channel_with_country.csv` - channel data with education category, obtained by `__mini___raw_df_channels_100k.tsv` and YouTube API
-- `other_channel_with_country.csv` - channel data with categories other than education, obtained by `__mini___raw_df_channels_100k.tsv` and YouTube API
-- `video_with_channelcountry.csv` - videos with country data, obtained by left-joining `education_data._raw_yt_metadata.jsonl_no_description.csv` and `education_channel_with_country.csv`
