@@ -9,6 +9,9 @@
 ## Abstract
 In the maze of late-night study sessions and looming deadlines, many of us have turned to YouTube for a lifeline—often finding it in the clear, concise explanations of Indian STEM tutors. This project seeks to uncover the factors that have propelled Indian creators to the forefront of STEM education on YouTube, exploring how their content evolved over time and comparing their strategies and engagement to those of other countries. By analyzing a rich tapestry of metadata, from geographic associations to monetization patterns, we investigate what sets Indian STEM channels apart: Are they uniquely positioned to grow their audience, or do their teaching styles and topic choices appeal more broadly? Integrating additional resources like the YouTube Data API, we delve into how comments form communities of recurring viewers and how learners navigate diverse STEM topics. From quantifying their rise to understanding their lasting impact on student engagement and sentiment, this project paints a vibrant picture of how Indian creators are not just helping viewers pass exams—they’re reshaping the landscape of inclusive, accessible STEM learning worldwide.
 
+### Link to website:
+[Final project website](https://ngoccc.github.io/ADAcadabra2048/)
+
 ## Research Questions: 
 * How have Indian creators shaped the trend of STEM content on YouTube? What factors contribute to its popularity over time?
 * What are the characteristics of top-ranked Indian STEM channels, compared to those of other countries?
