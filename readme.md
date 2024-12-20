@@ -109,10 +109,14 @@ The necessary files are hosted in a shared Google Drive folder, accessible at th
 [Google Drive: ADA dataset](https://drive.google.com/drive/folders/1yV7g05QrUFoErd6uBBaWjHgLU_RXLuBU?usp=sharing)
 
 - `final_keywords.txt` - contains the list of keywords used for classifying STEM content
+- `monetization_labels.json` - contains the dictionary of keyword-monetization strategies - taken from [this prior work](https://github.com/vegetable68/YouTube-Alternative-Monetization/blob/main/domains_dict_labels_final.jsonl)
 - Within the `channels` folder:
   - `education_channel_with_country.csv` - contains all channels within education category, added a "country" column
   - `other_channel_with_country.csv` - contains all channels within other (not education) category, added a "country" column
+  - df_timeseries_en.tsv.gz - raw dataset for channel time series data
 - Within the `videos` folder:
   - `videos_edu_with_country_nonan.csv` - contains all videos with education category, added a "country" column (no NaN)
+  - `videos_stem_with_descriptions.csv` - contains all videos with education category and is STEM, with description added (previously we did not include for analysis due to the size)
+  - `videos_stem.csv` - contains all videos with education category and is STEM (without descriptions)
   - `videos_stem.csv` - contains all videos with education category _and_ as classified as STEM, added a "country" column (no NaN)
 
