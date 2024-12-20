@@ -7,7 +7,7 @@
 > Project Members (sorted alphabetically by last name): Antonina Alekseeva, Ching-Chi Chou, Bich Ngoc (Rubi) Doan, Yasmine Kroknes-Gomez.
 > 
 ## Abstract
-In the maze of late-night study sessions and looming deadlines, many of us have turned to YouTube for a lifeline and often found it in the clear, concise explanations of Indian STEM tutors. This project explores how these creators have redefined digital learning, transforming YouTube into a global classroom. By analyzing YouTube metadata, including trends in video uploads, viewership, and engagement metrics, we trace the growth of Indian STEM content over time. Aiming to use sentiment analysis on comments, we want to uncover what resonates most with viewers, whether it be teaching styles or accessibility. To further enrich our understanding, we want to deploy advanced keyword classification based on hierarchical structures of STEM topics and measure content alignment through cosine similarity. From the heartfelt comments of grateful learners to the recurring communities built around these channels, this project tells the story of how Indian tutors are not just saving students—but shaping the future of inclusive, diverse, and empowering STEM education worldwide.
+In the maze of late-night study sessions and looming deadlines, many of us have turned to YouTube for a lifeline—often finding it in the clear, concise explanations of Indian STEM tutors. This project seeks to uncover the factors that have propelled Indian creators to the forefront of STEM education on YouTube, exploring how their content evolved over time and comparing their strategies and engagement to those of other countries. By analyzing a rich tapestry of metadata, from geographic associations to monetization patterns, we investigate what sets Indian STEM channels apart: Are they uniquely positioned to grow their audience, or do their teaching styles and topic choices appeal more broadly? Integrating additional resources like the YouTube Data API, we delve into how comments form communities of recurring viewers and how learners navigate diverse STEM topics. From quantifying their rise to understanding their lasting impact on student engagement and sentiment, this project paints a vibrant picture of how Indian creators are not just helping viewers pass exams—they’re reshaping the landscape of inclusive, accessible STEM learning worldwide.
 
 ## Research Questions: 
 * How have Indian creators shaped the trend of STEM content on YouTube? What factors contribute to its popularity over time?
@@ -36,12 +36,18 @@ We used Selenium and Chromedriver to scrape lecture video data from MIT OpenCour
     
     **Main and Subcategory Nesting** - We defined the main categories (Science, Computer Science (as a proxy for Technology), Engineering, and Mathematics) to fit the STEM format. Existing subcategories were assigned to their respective main categories, ensuring they aligned with the STEM structure. Subcategories without lecture items were filtered out to maintain relevance. Each main category was populated with its filtered subcategories, forming a clean and logical hierarchical structure.
 
-#### Note for Milestone 2:
-To define whether the video is STEM-related or not, we tried to measure the cosine similarity between each of its tags and the names of categories. To encode tags and categories, we selected the model [all-MiniLM-L6-v2]( https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2), a light and low-dimension model which is easy to run locally. With a subset of the whole video dataset, we selected the cosine similarity threshold=0.5, which demonstrated mostly full and accurate results.
+### Defining what a STEM video is:
+Using our generated and cleaned keyword list from OCW, we proceeded to implement a pipeline to classify whether an educational video was STEM or not. We used FlashText to quickly scan titles and tags of **1.9 million educational videos** for exact STEM keyword matches defined by our 152 predefined topics. This was done by the following steps:
 
-The code for this method is available in `/tests/stem_video_classification/`.
+1. **Direct Keyword Matching (FlashText):** Instantly identified exact single-word and multi-word STEM keywords in titles and tags. If no direct matches were found, we proceeded to fuzzy matching.
 
-Although the subset results were convincing, we received a very disappointing categorization when filtered out all of the videos without country info, which is necessary for testing our hypothesis. The first iterations of this method were especially computationally heavy and time consuming, hence we couldn't test more models to see if this would allow us to qualify the rows properly. Comparing the models' quality and filtering will be implemented in Milestone 3.
+2. **Fuzzy Matching for Multi-Word Phrases:** Generated up to 4-word n-grams from titles and tags to catch near-perfect (≥90% similarity) variants of STEM keywords (e.g., “Pyhton” vs. “Python”).
+
+3. **Parallel Processing for Efficiency:** Applied multithreading (ThreadPoolExecutor) to handle large-scale text matching, speeding up the classification process across millions of videos.
+
+4. **Tag Thresholding and Intersection Rule:** Ensured that at least half of a video’s tags matched STEM keywords and that its title also contained a STEM keyword, creating a strict two-tier verification to minimize false positives and negatives.
+
+Our pipeline successfully filtered down millions of educational videos to approximately **74,717 STEM videos**. 
 
 ## Methods
 Note that some parts of each task were (partially) implemented in Milestone 2 to ensure their feasibility. We will carry out more detailed analysis, at the same time filter out the most important visualizations and findings that align well with our research questions later on in Milestone 3.
