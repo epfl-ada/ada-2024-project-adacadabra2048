@@ -52,26 +52,21 @@ Note that some parts of each task were (partially) implemented in Milestone 2 to
     * **Basic statistics**: Total number of Indian STEM videos compared to STEM videos from other countries
     * **Visualize** trends in viewership, likes, dislikes, and subscriber counts.
 * **Historical Context:**
-    *  **Temporal Analysis**: Use upload dates to show how Indian STEM content has grown over time. Explore whether there’s a specific growth spurt, possibly around particular global events or shifts in online learning trends.
+    *  **Topic Breakdown & Temporal Analysis**: Use upload dates to show how Indian STEM content has grown over time. Explore whether there’s a specific growth spurt, possibly around particular global events or shifts in online learning trends.
 
 ### Task 2: What drives Indian making educational content (Influence of Channel Popularity and Content Characteristics)
 
-* **Influencer Impact:** 
-    * **Basic statistics**: Use channel subscriber counts and the SocialBlade rankings to see if top-ranked Indian educational channels drive this trend. (i.e are the top-ranked channels Indians?)
-    * Influencer impact could be discussed in country-scale, for example, big data, deep learning, chat GPT may initially emerge from in some developed countries, and then after some time lag, Indians start to make these tutorials 
-        
-* **Causal or Correlational Analysis**:
-    * Use causal inference / correlation analyses to see if certain content characteristics—like video length, frequency of uploads, or type of tags—are linked to higher engagement or viewer retention on Indian STEM videos
-    * This is to answer/connect to the previous question: If Indian is indeed the top-ranked STEM channel: Are there certain characteristics that make them successful? Or even if Indian is not on top, it’s also interesting because why do they still make videos, even when they’re not high-ranked!?
-    * May have relation with levels of educations. Why many channels with less subscribers still making educational videos? Maybe many Indian cannot higher education so YouTube become a way
-* **Viewership Patterns Analysis:** On the top-ranked Indian channels:
-    * **Temporal analysis**: Use time-series data to track how views and subscribers have changed for channels posting Indian STEM content. This could reveal trends of increasing viewership or shifts in subscriber base around educational events or exam seasons.
-
-### Task 3: Are Indian teachers good at STEM content? (Audience Engagement and Content Reception)
-* **Engagement Metrics Analysis**: Look into the comments, likes, and dislikes to gauge audience reception. Analyze:
+* **Money Matters: Are They Teaching for Profit?**:
+    * To understand how Indian STEM content creators make profits from Youtube channels
+* **Success Strategies: How Indian Channels Grow**:
+    * Use correlation analyses to see if certain content characteristics—like frequency of uploads linked to higher engagement on Indian STEM videos
+* **Exam Season Heroes: When Students Need Them Most:**
+    * Examine whether there's a correlation between viewer's engaments and exam periods.
+### Task 3: Quality Check: How Well Do Indian Tutors Teach? (Audience Engagement and Content Reception)
+* **By the Numbers: How Indian Tutors Compare Globally**: Look into the comments, likes, and dislikes to gauge audience reception. Analyze:
     * Whether Indian STEM videos have higher or lower engagement than non-STEM or non-Indian content. 
     * Disaggregate likes, dislikes, and comments per video to assess the audience's interest in Indian educational content
-* **Sentiment Analysis / Text Analysis**: What are the comments talking about? Are they discuss about the course content or just praising the content creator?
+* **The Verdict: What Students Really Think**: What are the comments talking about? Are they discuss about the course content or just praising the content creator?
     * Crawl some top comments of a sample of videos using Youtube API.
     * Conduct sentiment analysis on comments to identify overall viewer attitudes. For deeper insights, categorize/cluster sentiments by themes or common terms to see what aspects of content resonate most. (e.g some topics have more negative sentiment than others?)
     * Conducting Commenter (or channel) network analysis to see what kind of STEM videos are usually studied together (or made by a channel)
