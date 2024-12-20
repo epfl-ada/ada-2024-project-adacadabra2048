@@ -77,11 +77,6 @@ Note that some parts of each task were (partially) implemented in Milestone 2 to
 * **Step 3:** Combine results and check for coherence and consistency with research questions. Construct the data story accordingly. *(Everyone)*
 * **Step 4:** Develop data website and prepare the final report. *(TBD)*
 
-
-## Questions for TAs (optional): 
-* The STEM data filtering seems to be a big obstacle for us at the moment. We've tried to used different methods (simple regex, keyword crawling and filtering, converting to vector space etc), but they all seem to have its drawbacks, whether of computational resource consumption or accuracy. The one we chosen in the end seems to be the most "reasonable" one, however it still might fail to capture the majority of STEM content. Some of the classified STEM tags might not be relevant due to tag misuse or no tag used at all. Is it okay to leave it as a limitation, or should we spend more effort refining this preprocessing pipeline?
-
-
 ## Project Structure
 
 The directory structure of new project looks like this:
