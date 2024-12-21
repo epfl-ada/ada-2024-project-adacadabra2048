@@ -26,7 +26,9 @@ In the maze of late-night study sessions and looming deadlines, many of us have 
 
 * **MIT OpenCourseWare (OCW)**: Offers free educational resources like lecture notes, videos, and assignments, organized by topics. We used its predefined topics as categories to build a hierarchical structure of STEM-related keywords, forming the foundation for analyzing STEM content in other datasets. 
 
-## Data Preprocessing Pipeline (WIP)
+* **Youtube Monetization Strategies**: From [this paper](https://doi.org/10.1145/3555174), we obtain the dictionary mapping keywords to distinct monetization strategies. This will assist in analyzing the motivators behind the content creation strategies of Indian creators.
+
+## Data Preprocessing Pipeline
 
 ![ada](https://hackmd.io/_uploads/Bk6m3VSfkx.png)
 
@@ -54,7 +56,6 @@ Our pipeline successfully filtered down millions of educational videos to approx
 
 ## Methods
 Note that some parts of each task were (partially) implemented in Milestone 2 to ensure their feasibility. We will carry out more detailed analysis, at the same time filter out the most important visualizations and findings that align well with our research questions later on in Milestone 3.
-
 
 ### Task 1: What makes Indian STEM tutorials special? (Framing the Trend of Rising Popularity among Indian STEM Content)
 * **Descriptive Analysis**: Begin by describing the dataset with an emphasis on videos from Indian creators. This could reveal a possible growth pattern in Indian educational content. Examine:
@@ -84,7 +85,7 @@ Note that some parts of each task were (partially) implemented in Milestone 2 to
 * **Step 1:** Refine and finish data preprocessing pipeline for classifying STEM Content *(Tonya & Yasmine)*
 * **Step 2:** Implement task 1-3, splitting among team members. Choose the visualization and insights that fit the most with our overaching research goals; having meetings to confirm, give feedback and agree on chosen implementations. *(Rubi, Chingchi, Yasmine)*
 * **Step 3:** Combine results and check for coherence and consistency with research questions. Construct the data story accordingly. *(Everyone)*
-* **Step 4:** Develop data website and prepare the final report. *(TBD)*
+* **Step 4:** Develop data website and prepare the final report. *(Everyone)*
 
 ## Project Structure
 
